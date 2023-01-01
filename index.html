@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <link rel="stylesheet" href="./assets/css/index.css">
+    <title>5 Day Weather Forecast</title>
+</head>
+<body class="bg-image">
+    <header class="border">
+        <h2 class="title mainColor t-a-c">Today's Weather</h2>
+    </header>
+    <section class="main border hide">
+        <div id='currentWindow' class="current">
+            <h2 id="city" class="mainColor t-a-c"></h2>
+            <h4 id="date" class="mainColor t-a-c"></h4>
+            <h1 id="temp" class="mainColor t-a-c"><span>&#186;</span></h1>
+            <div class="currentStats">
+                <h4 id="description" class="mainColor t-a-c"></h4>
+            </div>
+            <img id='icon' src="" alt="" class="need zip code input to display this icon">
+            <div class="apart"> 
+                <div class="currentStats">
+                    <h3 class="currentStat mainColor t-a-l">Humidity:</h3>
+                    <h3 id="humidity" class="t-a-r mainColor"></h3>
+                </div>
+                <div class="currentStats">
+                    <h3 class="currentStat mainColor t-a-l">Wind:</h3>
+                    <h3 id="wind" class="t-a-r mainColor"></h3>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="input border">
+        <input id="zip" type="text" placeholder="Enter your Zip Code">
+        <button id='zipBtn' type="submit" class="mainColor border">Get Weather</button>
+    </section>
+
+    <div class="fiveDay">
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+    <script>dayjs().format()</script>
+    <script src="./assets/js/index.js"></script>
+</body>
+</html>
