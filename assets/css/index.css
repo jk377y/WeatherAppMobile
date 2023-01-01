@@ -1,14 +1,14 @@
 /* ===== RESETS AND DEFAULTS ===== */
 *,*::before,*::after{box-sizing: border-box;}
 *{margin: 0;padding: 0;}
-body{line-height: 1.5;}
+body{line-height: 1.5;background-color: var(--bgColor);}
 
 /* var() values for group coloring */
 :root {
     --color1: rgb(255, 255, 255);
     --color2: rgb(177, 108, 255);
     --borderColor: rgba(5, 5, 5, 0.993);
-    --bgColor: rgb(0, 132, 255);
+    --bgColor: #111037;
     --windowColor: rgba(128, 128, 128, 0.144);
     --hover: rgb(255, 255, 0);
 }
@@ -34,19 +34,16 @@ body{line-height: 1.5;}
 .secondaryColor {
     color: var(--color2);
 }
-body {
+.bg-image {
     background-color: var(--bgColor);
-    
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-.bg-image {
     background-repeat:no-repeat;
     background-position: top;
-    background-size: cover;
+    background-size: contain;
     background-image: url(../images/stitch.png);
-    width: 100%;
+    max-width: 478px;
     height: 100vh;
 }
 header {
@@ -101,6 +98,7 @@ h4 {
     height: 100px;
     border-radius: 10px;
     margin: 20px;
+    background-color: rgba(68, 68, 68, 0.76);
 }
 #temp {
     height: 100px;
